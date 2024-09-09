@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Send data by Template view with HTML Pages</h1>
+       <h1> {{Name}} </h1>
+        <h1>{{Age}}</h1>
+        <br><br><br>
+        <h1>Student Details Form: </h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ESFO.as_p}}
+
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
